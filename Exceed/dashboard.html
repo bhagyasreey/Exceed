@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+<script src="script.js"></script>      
+</head>
+<body>
+    <div class="navigation">
+        <p>	<img class="logo-img" src="Logo.png" alt="" width="300px" height="100px"> <h1><b> STATION MASTER ASSISTANCE </b></h1><img src="p.png"> </p>
+         
+        
+    </div>
+    <ul id="nav-list">
+        <li><a href="dashboard.html">DASHBOARD</a></li>
+        <li><a href="home.html">HOME</a></li>
+         <li><a href="">STATION DIARY</a></li>
+         <li><a href="">SIGNAL AND EQUIPMENT RECORDS</a></li>
+         <li><a href="">STAFF LOGS</a></li>
+         <li><a href="">SAFETY AND SECURITY</a></li>
+   </ul>
+
+    <div class="dashboard">
+        <!-- Upcoming Tasks Section -->
+        <div class="tasks">
+            <h3>Upcoming Tasks</h3>
+            
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <div>
+            <h2>Tasks Scheduled</h2>
+            <ul id="myUL">
+                <!--<li>Train Announcement</li>
+                
+                <li>Train Scheduling</li>
+                <li>Safety Checks</li>
+                <li>Platform Management</li>
+                <li>Complaint Resolution</li>-->
+              </ul>
+        </div>
+
+        <!-- Train Rush Chart -->
+        <div class="train-rush">
+            <h3>Train Rush</h3>
+            <div class="chart">
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 80%;"></div>
+                <div class="bar" style="height: 40%;"></div>
+                <div class="bar" style="height: 70%;"></div>
+            </div>
+        </div>
+
+       
+
+        <!-- Train Schedule Table -->
+        <div class="train-schedule">
+            <h3>Train Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Train</th>
+                        <th>Arrival</th>
+                        <th>A.Delay</th>
+                        <th>Departure</th>
+                        <th>D.Delay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Train 1</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>Train 2</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                    <!-- Repeat for other trains -->
+                    <tr>
+                        <td>Train 2</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>Train 3</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>Train 4</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>Train 5</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>Train 6</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                        <td>--:--</td>
+                        <td>--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
