@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+<script src="script.js"></script>      
+</head>
+<body>
+    <div class="navigation">
+        <p>	<img class="logo-img" src="Logo.png" alt="" width="300px" height="100px"> <h1><b> STATION MASTER ASSISTANCE </b></h1><img src="p.png"> </p>
+         
+        
+    </div>
+    <ul id="nav-list">
+        <li><a href="dashboard.html">DASHBOARD</a></li>
+        <li><a href="home.html">HOME</a></li>
+         <li><a href="sdiary.html">STATION DIARY</a></li>
+         <li><a href="">SIGNAL AND EQUIPMENT RECORDS</a></li>
+         <li><a href="">STAFF LOGS</a></li>
+         <li><a href="">SAFETY AND SECURITY</a></li>
+   </ul>
+   <div class="announcement">
+    <h1>Train Announcement System <img src="c.png"></h1>
+   </div>
+   <div class="instructions">
+    <h2>Instructions</h2>
+    <p><strong>Enter Announcement Text:</strong></p>
+    <ul>
+        <li>Use this box to type announcements related to train departures or arrivals.</li>
+        <li>Example 1: <em>"The train number 12589, Howrah Express, is arriving at Platform 3 in 5 minutes."</em></li>
+        <li>Example 2: <em>"The train number 12657, Chennai Express, is now ready to depart from Platform 2."</em></li>
+    </ul>
+    <p><strong>Make Announcement:</strong></p>
+    <ul>
+        <li>After typing the announcement, click the <strong>Make Announcement</strong> button to generate and play the voice announcement over the station system.</li>
+    </ul>
+    <div>
+      
+        <textarea id="announcementText" placeholder="Enter announcement text..." ></textarea>
+        <button onclick="makeAnnouncement()">Make Announcement</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="voice">
+        <h1>Voice Transcription Tool<img src="v.png"></h1>
+    </div>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        
+        <p>Follow these steps to use the <span class="highlight">Speech-to-Text Logger</span> efficiently:</p>
+        <ol>
+            <li>Click on the <span class="highlight">Start Voice Recognition</span> button.</li>
+            <li>Speak your message or announcement clearly.</li>
+            <li>The system will automatically convert your voice into text in real time.</li>
+            <li>Review, edit, and save the transcript for future reference.</li>
+        </ol>
+    </div>
+    <div>
+        <button onclick="startVoiceRecognition()">Start Voice Recognition</button>
+    <p id="voiceOutput" style="margin-top: 10px;"></p>
+    </div>
+    <br>
+    <br>
+    <div class="image">
+        <h1>Digitization of Handwritten Station Notes<img src="h.png"></h1>
+    </div>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Click the Upload Image button to select a handwritten text image from your device.</li>
+            <li>Use a clear, high-quality image for best results.</li>
+            <li> Click the <strong>Convert to Text</strong> button after uploading.</li>
+            <li>Check the extracted text and make any edits in the text box.</li>
+            <li>Save the text for future reference or use it as needed.</li>
+        </ol>
+    </div>
+    <div>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="processImageToText()">Extract Text</button>
+    <p id="extractedText" style="margin-top: 10px;"></p>
+    </div>
+
+</div>
+</body>
+</html>
