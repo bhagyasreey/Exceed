@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+<script src="script.js"></script>      
+</head>
+<body>
+    <div class="navigation">
+        <p>	<img class="logo-img" src="Logo.png" alt="" width="300px" height="100px"> <h1><b> STATION MASTER ASSISTANCE </b></h1><img src="p.png"> </p>
+         
+        
+    </div>
+    <ul id="nav-list">
+        <li><a href="index.html">HOME</a></li>
+         <li><a href="sdiary.html">STATION DIARY</a></li>
+         <li><a href="">SIGNAL AND EQUIPMENT RECORDS</a></li>
+         <li><a href="staff.html">STAFF LOGS</a></li>
+         <li><a href="">SAFETY AND SECURITY</a></li>
+   </ul>
+   <nav class="top-nav">
+    <h1>Staff Management System</h1>
+    <div class="profile-section">
+        <div class="profile-img"></div>
+    </div>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="staff.html" class="nav-item active">
+                <span>📊</span>
+                Dashboard
+            </a>
+            <a href="staff_tt.html" class="nav-item">
+                <span>📅</span>
+                Timetable
+            </a>
+            <a href="#" class="nav-item">
+                <span>👥</span>
+                Staff Profiles
+            </a>
+            <a href="staff_maint.html" class="nav-item">
+                <span>🔧</span>
+                Maintenance
+            </a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-content">
+                    <div class="stat-info">
+                        <h3>Total Shifts</h3>
+                        <p>48</p>
+                    </div>
+                    <div class="stat-icon">📅</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-content">
+                    <div class="stat-info">
+                        <h3>Available Staff</h3>
+                        <p>32</p>
+                    </div>
+                    <div class="stat-icon">👥</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-content">
+                    <div class="stat-info">
+                        <h3>On Leave</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="stat-icon">🏖️</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-content">
+                    <div class="stat-info">
+                        <h3>Pending Tasks</h3>
+                        <p>12</p>
+                    </div>
+                    <div class="stat-icon">📋</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h2>Recent Notifications</h2>
+                <div class="notification-list">
+                    <div class="notification-item">
+                        <span>🚨</span>
+                        <p>Emergency maintenance required in Station A</p>
+                    </div>
+                    <div class="notification-item">
+                        <span>ℹ️</span>
+                        <p>New shift swap request from John</p>
+                    </div>
+                    <div class="notification-item">
+                        <span>⚠️</span>
+                        <p>Understaffed evening shift tomorrow</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Maintenance Tasks</h2>
+                <div class="task-list">
+                    <div class="task-item">
+                        <div>
+                            <p class="task-title">Track Inspection</p>
+                            <p class="task-assignee">Assigned to: Mike Ross</p>
+                        </div>
+                        <span class="status-badge status-progress">In Progress</span>
+                    </div>
+                    <div class="task-item">
+                        <div>
+                            <p class="task-title">Station Cleaning</p>
+                            <p class="task-assignee">Assigned to: Sarah Johnson</p>
+                        </div>
+                        <span class="status-badge status-pending">Pending</span>
+                    </div>
+                    <div class="task-item">
+                        <div>
+                            <p class="task-title">Equipment Check</p>
+                            <p class="task-assignee">Assigned to: David Chen</p>
+                        </div>
+                        <span class="status-badge status-completed">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
